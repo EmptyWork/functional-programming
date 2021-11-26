@@ -1,0 +1,22 @@
+cabal-version:      2.4
+name:               ewhaskell
+version:            0.1.0.0
+synopsis:           Haskell based code
+description:        
+    Collection of code for learning and solving the katas from [Codewars](https://www.codewars.com/)
+    See [README.md](https://github.com/EmptyWork/functional-programming/haskell/#haskell) for more details.
+homepage:           https://github.com/EmptyWork/functional-programming/haskell
+bug-reports:        https://github.com/EmptyWork/functional-programming/issues
+license:            MIT
+license-file:       LICENSE
+author:             emptywork
+maintainer:         22065214+EmptyWork@users.noreply.github.com
+copyright:          2021 EmptyWork
+extra-source-files: 
+    CHANGELOG.md
+    README.md
+
+source-repository head
+    type:                git
+    location:            https://github.com/EmptyWork/functional-programming.git
+
