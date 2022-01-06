@@ -1,4 +1,4 @@
-module DividedBy where
+module Codewars.EightKyu.DividedBy where
 
 isDividedby :: Integral a => a -> a -> a -> Bool
 isDividedby num a b = isWholeNumber num b && isWholeNumber num a

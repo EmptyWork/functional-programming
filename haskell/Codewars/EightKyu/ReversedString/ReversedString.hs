@@ -1,4 +1,4 @@
-module ReversedString where
+module Codewars.EightKyu.ReversedString where
 
 solution :: String -> String
 solution [] = []

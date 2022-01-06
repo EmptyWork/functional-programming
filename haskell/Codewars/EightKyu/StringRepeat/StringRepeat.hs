@@ -1,4 +1,4 @@
-module StringRepeat where
+module Codewars.EightKyu.StringRepeat where
 
 repeatStr :: Int -> String -> String
 repeatStr n str = combine (replicate n str)
