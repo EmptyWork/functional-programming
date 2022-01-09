@@ -33,6 +33,7 @@ jobs:
 
     - name: Build
       run: |
+        cd haskell
         cabal v2-build --enable-tests --enable-benchmarks
 
   datatypes:
@@ -59,4 +60,5 @@ jobs:
 
     - name: BasicTypes
       run: |
+        cd haskell
         cabal run ewhaskell-test --enable-tests -- -m "BasicTypes"
