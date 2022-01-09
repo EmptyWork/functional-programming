@@ -2,7 +2,7 @@
 
 ## **STATUS** ✅ — COMPLETE
 
-This is my solution for [8kyu - is Devided By](https://www.codewars.com/kata/5a2b703dc5e2845c0900005a)
+This is my solution for [8kyu - is Divided By](https://www.codewars.com/kata/5a2b703dc5e2845c0900005a)
 
 ## Kata
 
