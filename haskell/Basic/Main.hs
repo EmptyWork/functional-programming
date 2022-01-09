@@ -1,5 +1,5 @@
 module Main (main) where
-import Basic.DataTypes.BasicTypes (showTrue, circle, sayHello, charC)
+import DataTypes.BasicTypes (showTrue, circle, sayHello, charC)
 
 main :: IO ()
 main = do

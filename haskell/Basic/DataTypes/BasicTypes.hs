@@ -1,6 +1,4 @@
-module Basic.DataTypes.BasicTypes where
-import System.Directory.Internal.Prelude (Fractional)
-import GHC.Num (Num)
+module DataTypes.BasicTypes where
 
 {-
 >>> :t 2

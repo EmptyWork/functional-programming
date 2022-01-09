@@ -41,15 +41,16 @@ common common-options
 library
   import:              common-options
   hs-source-dirs:      Basic
-  exposed-modules:     Basic.DataTypes.BasicTypes
+  exposed-modules:     DataTypes.BasicTypes
 
 test-suite ewhaskell-test
   import:              common-options
   type:                exitcode-stdio-1.0
   hs-source-dirs:      Tests
   main-is:             Spec.hs
-  other-modules:       DataTypes.BasicTypes
-  build-depends:       hspec ^>= 2.7.4
+  other-modules:       Test.BasicTypes
+  build-depends:       ewhaskell
+                     , hspec ^>= 2.7.4
   ghc-options:         -threaded
                        -rtsopts
                        -with-rtsopts=-N

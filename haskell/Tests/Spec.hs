@@ -1,8 +1,8 @@
-module Tests.Main (main) where
+module Main (main) where
 
 import Test.Hspec (hspec)
 
-import Tests.DataTypes.BasicTypes
+import Test.BasicTypes
 
 main :: IO ()
 main = hspec $ do

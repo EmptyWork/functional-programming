@@ -1,14 +1,14 @@
 {-# OPTIONS_GHC -Wno-type-defaults #-}
 
-module Tests.DataTypes.BasicTypes where
+module Test.BasicTypes where
 
 import Test.Hspec (Spec, describe, it, shouldBe)
 
-import Basic.DataTypes.BasicTypes
+import DataTypes.BasicTypes
 
 
 basicTypes :: Spec
-basicTypes = describe "All basic data types:" $ do
+basicTypes = describe "BasicTypes" $ do
   basicTypes1
 
 basicTypes1 :: Spec
