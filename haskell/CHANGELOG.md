@@ -1,5 +1,12 @@
 # Revision history for ewhaskell
 
+## 0.1.4.2 -- 2022-01-11
+
+* Update the `Basic` folder
+  * Add `ObjectTypes.hs`
+* Update the `Tests` folder
+  * Add `ObjectTypes.hs`
+
 ## 0.1.2.0 -- 2022-01-07
 
 * Add the `Basic` folder
