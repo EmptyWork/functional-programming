@@ -36,8 +36,8 @@ jobs:
         cd haskell
         cabal v2-build --enable-tests --enable-benchmarks
 
-  datatypes:
-    name: Data Types
+  tests:
+    name: Tests
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -62,3 +62,8 @@ jobs:
       run: |
         cd haskell
         cabal run ewhaskell-test --enable-tests -- -m "BasicTypes"
+
+    - name: ObjectTypes
+      run: |
+        cd haskell
+        cabal run ewhaskell-test --enable-tests -- -m "ObjectTypes"
