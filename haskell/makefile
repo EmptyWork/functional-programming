@@ -1,25 +1,36 @@
 GHC=ghc
-BUILD=build
-BASIC=basic
 CABAL=cabal
 CD=cd
-SRCS=DataTypes
+
+BUILD=build
+BASIC=basic
+
 TESTNAME=ewhaskell-test
 
+EXEC=DataTypes
+
+SUBTESTS=BasicTypesNormal ObjectTypesNormal ObjectTypesAdvance ObjectTypesAdvanceTwo
+TESTS=BasicTypes ObjectTypes $(SUBTESTS)
+
 .PHONY: all
-all: $(BUILD) $(SRCS)
+all: $(BUILD) $(EXEC)
 
 $(BUILD):
 	mkdir $@
 
-DataTypes: $(BASIC)/Main.hs
-	$(CD) $(BASIC) && $(GHC) -o ../$(BUILD)/$@ ../$<
+$(EXEC): 
+	$(CABAL) v2-build
+	find . -type f -name "$@" | xargs -I {} mv {} ./build/$@
 	make clean
 	clear
 
-.PHONY: test-basicTypes
-test-basicTypes:
-	$(CABAL) run $(TESTNAME) --enable-test -- -m "BasicTypes"
+.PHONY: test
+test: test-$(TESTS)
+	$(CABAL) run $(TESTNAME) --enable-test
+
+.PHONY: test-$(TESTS)
+test-$(TESTS):
+	$(CABAL) run $(TESTNAME) --enable-test -- -m "$@"
 
 clean:
 	$(CD) bin && ./$@.sh
