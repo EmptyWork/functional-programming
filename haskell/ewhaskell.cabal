@@ -1,6 +1,6 @@
 cabal-version:      2.4
 name:               ewhaskell
-version:            0.1.2.0
+version:            0.1.4.2
 synopsis:           Haskell based code
 description:        
     Collection of code for learning and solving the katas from [Codewars](https://www.codewars.com/)
