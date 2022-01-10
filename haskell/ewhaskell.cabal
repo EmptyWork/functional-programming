@@ -42,6 +42,7 @@ library
   import:              common-options
   hs-source-dirs:      basic
   exposed-modules:     DataTypes.BasicTypes
+                     , DataTypes.ObjectTypes 
 
 test-suite ewhaskell-test
   import:              common-options
@@ -49,8 +50,15 @@ test-suite ewhaskell-test
   hs-source-dirs:      tests
   main-is:             Spec.hs
   other-modules:       Test.BasicTypes
+                     , Test.ObjectTypes
   build-depends:       ewhaskell
                      , hspec ^>= 2.7.4
   ghc-options:         -threaded
                        -rtsopts
                        -with-rtsopts=-N
+
+executable DataTypes
+  import:              common-options
+  hs-source-dirs:      basic
+  main-is:             Main.hs
+  other-modules:       DataTypes.BasicTypes
