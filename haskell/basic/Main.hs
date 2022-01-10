@@ -6,6 +6,6 @@ main = do
   putStrLn "Copyright (C) 2022  EmptyWork"
   putStrLn ""
   sayHello
-  print (circle 2)
+  print (circle (2 :: Double))
   print showTrue
   print charC
