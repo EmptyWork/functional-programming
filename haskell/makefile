@@ -1,19 +1,26 @@
 GHC=ghc
-BUILD=Build
+BUILD=build
+BASIC=basic
+CABAL=cabal
+CD=cd
+SRCS=DataTypes
 TESTNAME=ewhaskell-test
 
 .PHONY: all
-all: $(BUILD) DataTypes
+all: $(BUILD) $(SRCS)
 
 $(BUILD):
 	mkdir $@
 
-DataTypes: Basic/Main.hs
-	$(GHC) -o $(BUILD)/$@ $<
+DataTypes: $(BASIC)/Main.hs
+	$(CD) $(BASIC) && $(GHC) -o ../$(BUILD)/$@ ../$<
+	make clean
+	clear
 
 .PHONY: test-basicTypes
 test-basicTypes:
-	cabal run $(TESTNAME) --enable-test -- -m "BasicTypes"
+	$(CABAL) run $(TESTNAME) --enable-test -- -m "BasicTypes"
 
 clean:
-	cd bin && ./clean.sh
+	$(CD) bin && ./$@.sh
+	$(CABAL) $@

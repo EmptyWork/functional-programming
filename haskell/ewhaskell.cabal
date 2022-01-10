@@ -40,13 +40,13 @@ common common-options
 
 library
   import:              common-options
-  hs-source-dirs:      Basic
+  hs-source-dirs:      basic
   exposed-modules:     DataTypes.BasicTypes
 
 test-suite ewhaskell-test
   import:              common-options
   type:                exitcode-stdio-1.0
-  hs-source-dirs:      Tests
+  hs-source-dirs:      tests
   main-is:             Spec.hs
   other-modules:       Test.BasicTypes
   build-depends:       ewhaskell
