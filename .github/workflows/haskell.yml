@@ -98,12 +98,7 @@ jobs:
     - name: Build DataTypes
       run: |
         cd haskell
-        make datatypes
-
-    - name: Running DataTypes
-      run: |
-        cd haskell
-        build/datatypes
+        cabal v2-build datatypes
 
   solvemefirst:
     name: Running SolveMeFirst
@@ -130,9 +125,4 @@ jobs:
     - name: Build SolveMeFirst
       run: |
         cd haskell
-        make solvemefirst
-
-    - name: Running SolveMeFirst
-      run: |
-        cd haskell
-        build/solvemefirst
+        cabal v2-build solvemefirst
