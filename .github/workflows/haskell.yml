@@ -98,5 +98,5 @@ jobs:
     name: Build DataTypes
     run: |
       cd haskell
-      make DataTypes
-      build/DataTypes
+      make datatypes
+      build/datatypes
