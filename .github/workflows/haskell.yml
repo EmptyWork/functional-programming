@@ -106,7 +106,7 @@ jobs:
         build/datatypes
 
   run:
-    name: Running DataTypes
+    name: Running SolveMeFirst
     runs-on: ubuntu-latest
     strategy:
       matrix:
