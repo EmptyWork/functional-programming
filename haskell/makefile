@@ -7,10 +7,10 @@ BASIC=basic
 
 TESTNAME=ewhaskell-test
 
-EXEC=DataTypes
+EXEC=datatypes solvemefirst
 
-SUBTESTS=BasicTypesNormal ObjectTypesNormal ObjectTypesAdvance ObjectTypesAdvanceTwo
-TESTS=BasicTypes ObjectTypes $(SUBTESTS)
+SUBTESTS=BasicTypesNormal ObjectTypesNormal ObjectTypesAdvance ObjectTypesAdvanceTwo EightKyuDividedBy EightKyuRealFloor EightKyuReversedString EightKyuShortLongShort
+TESTS=BasicTypes ObjectTypes CodeWars $(SUBTESTS)
 
 .PHONY: all
 all: $(BUILD) $(EXEC)
@@ -19,19 +19,17 @@ $(BUILD):
 	mkdir $@
 
 $(EXEC): 
-	$(CABAL) v2-build
-	find . -type f -name "$@" | xargs -I {} mv {} ./build/$@
-	make clean
-	clear
+	$(CABAL) v2-build $@
+	$(CD) dist-newstyle/ && ../bin/search.sh -n $@
 
 .PHONY: test
-test: test-$(TESTS)
+test: $(TESTS)
 	$(CABAL) run $(TESTNAME) --enable-test
 
-.PHONY: test-$(TESTS)
-test-$(TESTS):
+.PHONY: $(TESTS)
+$(TESTS):
 	$(CABAL) run $(TESTNAME) --enable-test -- -m "$@"
 
 clean:
-	$(CD) bin && ./$@.sh
+	./bin/$@.sh
 	$(CABAL) $@
