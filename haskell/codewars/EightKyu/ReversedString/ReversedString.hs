@@ -1,5 +1,5 @@
-module Codewars.EightKyu.ReversedString where
+module EightKyu.ReversedString.ReversedString where
 
-solution :: String -> String
-solution [] = []
-solution (x:xs) = solution xs ++ [x]
+reversedString :: String -> String
+reversedString [] = []
+reversedString (x:xs) = reversedString xs ++ [x]

@@ -1,4 +1,4 @@
-module Codewars.EightKyu.SimpleMultiplication where
+module EightKyu.SimpleMultiplication.SimpleMultiplication where
 
 simpleMultiplication :: Int -> Int
 simpleMultiplication n 

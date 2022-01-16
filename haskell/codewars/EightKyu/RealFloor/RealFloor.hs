@@ -1,4 +1,4 @@
-module Codewars.EightKyu.RealFloor where
+module EightKyu.RealFloor.RealFloor where
 
 realFloor :: (Num a, Ord a) => a -> a
 realFloor n

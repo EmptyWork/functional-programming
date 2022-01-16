@@ -1,4 +1,4 @@
-module Codewars.EightKyu.ShortLongShort where
+module EightKyu.ShortLongShort.ShortLongShort where
 
 shortLongShort :: [Char] -> [Char] -> [Char]
 shortLongShort x y 
