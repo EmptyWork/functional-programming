@@ -73,7 +73,7 @@ jobs:
         cd haskell
         cabal run ewhaskell-test --enable-tests -- -m "CodeWars"
 
-  run:
+  datatypes:
     name: Running DataTypes
     runs-on: ubuntu-latest
     strategy:
@@ -105,7 +105,7 @@ jobs:
         cd haskell
         build/datatypes
 
-  run:
+  solvemefirst:
     name: Running SolveMeFirst
     runs-on: ubuntu-latest
     strategy:
