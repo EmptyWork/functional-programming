@@ -18,7 +18,7 @@ basicTypes1 = describe "BasicTypesNormal" $ do
   it "not return True so its False" $ not showTrue `shouldNotBe` True
   it "return 'c' character" $ charC `shouldBe` 'c'
   it "not return 'j' character" $ charC `shouldNotBe` 'j'
-  it "return the number of phi" $ phi `shouldBe` 3.14
-  it "return circle area" $ circle 20 `shouldBe` 1256
-  it "return circle area" $ circle 2 `shouldBe` 12.56
+  it "return the number of phi" $ phi `shouldBe` 3.14159265
+  it "return circle area" $ circle 20 `shouldBe` 1256.63706
+  it "return circle area" $ circle 2 `shouldBe` 12.5663706
   it "return circle area" $ circle 2 `shouldNotBe` 20
