@@ -24,7 +24,7 @@ charC :: Char
 charC = 'c'
 
 phi :: Fractional p => p
-phi = 3.14
+phi = 3.14159265
 
 circle :: Fractional radius => radius -> radius
 circle r = phi * (r * r)
