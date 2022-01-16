@@ -41,8 +41,17 @@ common common-options
 library
   import:              common-options
   hs-source-dirs:      basic
+                     , codewars
   exposed-modules:     DataTypes.BasicTypes
                      , DataTypes.ObjectTypes 
+                     , EightKyu.DividedBy.DividedBy
+                     , EightKyu.RealFloor.RealFloor
+                     , EightKyu.ReversedString.ReversedString
+                     , EightKyu.ShortLongShort.ShortLongShort
+                     , EightKyu.SimpleMultiplication.SimpleMultiplication
+                     , EightKyu.StringRepeat.StringRepeat
+                     , EightKyu.SumString.SumString
+                     , EmptyWork
 
 test-suite ewhaskell-test
   import:              common-options
@@ -51,14 +60,22 @@ test-suite ewhaskell-test
   main-is:             Spec.hs
   other-modules:       Test.BasicTypes
                      , Test.ObjectTypes
+                     , Test.Codewars
   build-depends:       ewhaskell
                      , hspec ^>= 2.7.4
   ghc-options:         -threaded
                        -rtsopts
                        -with-rtsopts=-N
 
-executable DataTypes
+executable datatypes
   import:              common-options
   hs-source-dirs:      basic
   main-is:             Main.hs
   other-modules:       DataTypes.BasicTypes
+                     , EmptyWork
+                     
+executable solvemefirst
+  import:              common-options
+  hs-source-dirs:      challenges/solvemefirst
+  main-is:             SolveMeFirst.hs
+  -- other-modules:       
