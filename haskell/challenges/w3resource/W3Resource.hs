@@ -1,4 +1,11 @@
---- https://www.w3resource.com/c-programming-exercises/basic-algo/index.php
+{- 
+= W3Resource C Exercises =
+link: https://www.w3resource.com/c-programming-exercises/basic-algo/index.php 
+
+This challeges itself was created specially for C lang.
+And this is how to solve it using Haskell language.
+-}
+
 module W3Resource where
 
 import Data.Maybe (fromMaybe)
