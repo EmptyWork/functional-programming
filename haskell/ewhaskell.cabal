@@ -42,6 +42,7 @@ library
   import:              common-options
   hs-source-dirs:      basic
                      , codewars
+                     , challenges/w3resource
   exposed-modules:     DataTypes.BasicTypes
                      , DataTypes.ObjectTypes 
                      , EightKyu.DividedBy.DividedBy
@@ -52,6 +53,7 @@ library
                      , EightKyu.StringRepeat.StringRepeat
                      , EightKyu.SumString.SumString
                      , EmptyWork
+                     , W3Resource
 
 test-suite ewhaskell-test
   import:              common-options
