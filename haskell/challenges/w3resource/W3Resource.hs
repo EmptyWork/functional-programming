@@ -107,3 +107,8 @@ lastNumber n = isTheLast
 
 --- NumberFifteen
 --- Write a Haskell program to count the number of two 5's are next to each other in an array of integers. Also count the situation where the second 5 is actually a 6.
+
+--- NumberSixteen
+--- Write a Haskell program to check if a triple is presents in an array of integers or not. If a value appears three times in a row in an array it is called a triple.
+isTriple :: Int -> [Int] -> Bool
+isTriple num arr = length (filter (== num) arr) == 3
