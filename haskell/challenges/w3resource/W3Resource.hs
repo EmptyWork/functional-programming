@@ -104,3 +104,6 @@ lastNumber n = isTheLast
 -- newArr :: [a] -> [a]
 -- newArr [] = []
 -- newArr (x:xs) = 
+
+--- NumberFifteen
+--- Write a Haskell program to count the number of two 5's are next to each other in an array of integers. Also count the situation where the second 5 is actually a 6.
