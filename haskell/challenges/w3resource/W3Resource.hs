@@ -98,3 +98,9 @@ isTheSameLast numberOne numberTwo = lastNumber numberOne == lastNumber numberTwo
 lastNumber :: Integral b => b -> b
 lastNumber n = isTheLast
   where (_, isTheLast) = divMod (abs n) 10
+
+--- NumberFourteen
+--- Write a Haskell program to check whether the sequence of numbers 1, 2, 3 appears in a given array of integers somewhere.
+-- newArr :: [a] -> [a]
+-- newArr [] = []
+-- newArr (x:xs) = 
