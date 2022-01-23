@@ -112,3 +112,11 @@ lastNumber n = isTheLast
 --- Write a Haskell program to check if a triple is presents in an array of integers or not. If a value appears three times in a row in an array it is called a triple.
 isTriple :: Int -> [Int] -> Bool
 isTriple num arr = length (filter (== num) arr) == 3
+
+--- NumberSeventeen
+--- Write a Haskell program to compute the sum of the two given integers. If the sum is in the range 10..20 inclusive return 30.
+isInRange6 :: Int -> Int -> (Int, Int)
+isInRange6 numberOne numberTwo
+  | result >= 10 && result <= 20 = (result, returnMaybe $ Just 30)
+  | otherwise = (result, returnMaybe Nothing)
+  where result = numberOne + numberTwo
