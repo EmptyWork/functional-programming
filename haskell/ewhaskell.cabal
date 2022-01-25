@@ -63,6 +63,7 @@ test-suite ewhaskell-test
   other-modules:       Test.BasicTypes
                      , Test.ObjectTypes
                      , Test.Codewars
+                     , Test.ChaW3Re
   build-depends:       ewhaskell
                      , hspec ^>= 2.7.4
   ghc-options:         -threaded
