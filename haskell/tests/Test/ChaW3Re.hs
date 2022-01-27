@@ -7,7 +7,7 @@ import Test.Hspec (Spec, describe, it, shouldBe, shouldNotBe, shouldContain, sho
 import W3Resource
 
 challengesW3Resource :: Spec
-challengesW3Resource = describe "ChallegesW3Resource" $ do
+challengesW3Resource = describe "ChallengesW3Resource" $ do
   challengesW3Normal
 
 challengesW3Normal :: Spec
