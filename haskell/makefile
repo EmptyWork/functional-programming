@@ -10,7 +10,7 @@ TESTNAME=ewhaskell-test
 EXEC=datatypes solvemefirst
 
 SUBTESTS=BasicTypesNormal ObjectTypesNormal ObjectTypesAdvance ObjectTypesAdvanceTwo EightKyuDividedBy EightKyuRealFloor EightKyuReversedString EightKyuShortLongShort
-TESTS=BasicTypes ObjectTypes CodeWars $(SUBTESTS)
+TESTS=BasicTypes ObjectTypes CodeWars ChallegesW3Resource $(SUBTESTS)
 
 .PHONY: all
 all: $(BUILD) $(EXEC)
