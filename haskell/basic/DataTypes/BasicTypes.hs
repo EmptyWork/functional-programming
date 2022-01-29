@@ -2,18 +2,24 @@
 module DataTypes.BasicTypes where
 
 {-
+
+=○ [Default type in Haskell] ○=
+you can use `:t` to check the type of
+variables or functions 
 >>> :t 2
-2 :: Num p => p
-
 >>> circle 2
-
+>>> :t circle
 >>> :t True
-
 >>> :t 3.4
-
 >>> :t 'c'
-
 >>> :t "Hello World"
+2 :: Num p => p
+12.5663706
+circle :: Fractional radius => radius -> radius
+True :: Bool
+3.4 :: Fractional p => p
+'c' :: Char
+"Hello World" :: [Char]
 
 -}
 
