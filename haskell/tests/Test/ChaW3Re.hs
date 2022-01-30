@@ -52,5 +52,7 @@ challengesW3Normal = describe "ChallengesW3ResourceNormal" $ do
     it "isWithinTen of 205" $ isWithinTen 205 `shouldBe` True
   
   describe "ChallengesW3NisMultipleOfThreeOrSeven" $ do
-    it "isMultipleOfThreeOrSeven" $ isMultipleOfThreeOrSeven 20 `shouldBe` False
-    it "isMultipleOfThreeOrSeven" $ isMultipleOfThreeOrSeven 20 `shouldNotBe` True
+    it "isMultipleOfThreeOrSeven of 20" $ isMultipleOfThreeOrSeven 20 `shouldBe` False
+    it "isMultipleOfThreeOrSeven of 31" $ isMultipleOfThreeOrSeven 30 `shouldNotBe` False
+    it "isMultipleOfThreeOrSeven of 51" $ isMultipleOfThreeOrSeven 51 `shouldBe` True
+    it "isMultipleOfThreeOrSeven of 21" $ isMultipleOfThreeOrSeven 21 `shouldBe` True
