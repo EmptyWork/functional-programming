@@ -57,7 +57,7 @@ challengesW3Normal = describe "ChallengesW3ResourceNormal" $ do
     it "isMultipleOfThreeOrSeven of 51" $ isMultipleOfThreeOrSeven 51 `shouldBe` True
     it "isMultipleOfThreeOrSeven of 21" $ isMultipleOfThreeOrSeven 21 `shouldBe` True
 
-  describe "ChallengesW3NisSmallGreater" $ do
+  describe "ChallengesW3NisSmallerGreater" $ do
     it "isSmallGreater both positive" $ isSmallerGreater 30 30 `shouldBe` False
     it "isSmallGreater both positive" $ isSmallerGreater 0 105 `shouldBe` False
     it "isSmallGreater one negative, one positive" $ isSmallerGreater (-6) 105 `shouldBe` True
