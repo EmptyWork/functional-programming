@@ -1,0 +1,22 @@
+{
+  "name": "purescript",
+  "homepage": "https://github.com/EmptyWork/functional-programming",
+  "authors": [
+    "emptywork <22065214+EmptyWork@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "src/Main.purs",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "purescript-spec": "^5.0.1"
+  }
+}
