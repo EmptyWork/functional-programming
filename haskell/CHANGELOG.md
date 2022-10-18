@@ -1,5 +1,15 @@
 # Revision history for ewhaskell
 
+## 0.1.6.0 -- 2022-01-23
+
+* Update the `Codewars` folder
+  * Changes modules path
+* Update the `Tests` folder
+  * Add `Codewars.hs`
+* Update the `Basic` folder
+  * Add `EmptyWork.hs`
+  * Update `Main.hs` - Include `EmptyWork.hs`
+
 ## 0.1.4.2 -- 2022-01-11
 
 * Update the `Basic` folder
