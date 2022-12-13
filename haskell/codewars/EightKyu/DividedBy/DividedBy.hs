@@ -6,4 +6,4 @@ isDividedby num a b = isWholeNumber num b && isWholeNumber num a
     isWholeNumber number divider = number `mod` divider == 0
 
 isDividedby2 :: Int -> Int -> Int -> Bool
-isDividedby2 num a b = (num `mod` a) && (num `mod` b)
+isDividedby2 num a b = (num `mod` a == 0) && (num `mod` b == 0)
